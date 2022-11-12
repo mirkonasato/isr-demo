@@ -17,8 +17,9 @@ function HomePage({ products }) {
         {products.map((product) => (
           <li key={product.id}>
             <Link href={`/products/${product.id}`}>
-              {product.name}: {product.price.toFixed(2)}
+              {product.name}
             </Link>
+            <span>: ${product.price.toFixed(2)}</span>
           </li>
         ))}
       </ul>

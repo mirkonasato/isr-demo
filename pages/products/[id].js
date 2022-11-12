@@ -22,7 +22,7 @@ function ProductPage({ product }) {
   return (
     <main>
       <h1>{product.name}</h1>
-      <p>{product.price.toFixed(2)}</p>
+      <p>Price: ${product.price.toFixed(2)}</p>
     </main>
   );
 }
